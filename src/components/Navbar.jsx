@@ -27,29 +27,25 @@ const Navbar = () => {
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           
-          {/* --- LOGO REPLACEMENT --- */}
+          
           <Box
             component="img"
             src="/logo.png"
             alt="Org Logo"
             sx={{
-              height: { xs: 40, md: 50 }, // 40px on mobile, 50px on desktop
+              height: { xs: 40, md: 50 },
               width: 'auto',
               mr: 2,
-              // Optional: Add a white glow/background if your logo is dark
-              // bgcolor: 'rgba(255,255,255,0.9)', 
-              // borderRadius: '50%',
-              // p: 0.5 
             }}
           />
-          {/* ------------------------ */}
+          
 
           <Box sx={{ flexGrow: 1 }}>
             <Typography variant="h6" noWrap sx={{ lineHeight: 1, fontWeight: 'bold' }}>
-              Manthan 2025
+              Manthan - 2025
             </Typography>
             <Typography variant="caption" sx={{ opacity: 0.8, letterSpacing: 1, display: 'block' }}>
-              IAS FEEDBACK PORTAL
+              FEEDBACK PORTAL
             </Typography>
           </Box>
 
@@ -68,7 +64,7 @@ const Navbar = () => {
             </Button>
 
             {/* Admin Only Links */}
-            {user && (
+            {/* {user && (
               <>
                 <Button
                   component={Link}
@@ -91,14 +87,14 @@ const Navbar = () => {
                   <LogoutIcon />
                 </Button>
               </>
-            )}
+            )} */}
             
             {/* Login Link */}
-            {!user && location.pathname !== '/login' && (
+            {/* {!user && location.pathname !== '/login' && (
                <Button component={Link} to="/login" sx={{ color: 'rgba(255,255,255,0.7)' }}>
                  Login
                </Button>
-            )}
+            )} */}
           </Box>
         </Toolbar>
       </Container>
