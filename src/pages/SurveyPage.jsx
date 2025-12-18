@@ -31,6 +31,7 @@ const SECTION_SCHEDULE = {
   'Session 2: Ease of Doing Business (EoDB)': '2025-12-17T15:00:00',
   'Session 3: Challenges in Urban Development and Way Forward': '2025-12-17T16:30:00',
   'Session 4: Law & Future Roadmap': '2025-12-17T17:30:00',
+  'Session 5: PPP & Infrastructure': '2025-12-18T10:30:00',
 };
 
 const SurveyPage = () => {
